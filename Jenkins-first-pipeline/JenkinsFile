@@ -9,7 +9,7 @@ pipeline {
             steps {
 
                 script {
-                    /
+        
                     sh 'node --version'
                 }
             }
