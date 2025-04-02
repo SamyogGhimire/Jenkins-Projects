@@ -12,7 +12,7 @@ pipeline{
         }
         stage ('Front-end'){
             agent{
-                docker (image 'python:alpine')
+                docker {image 'python:alpine'}
             }
             steps{
                 sh 'python --version'
@@ -20,7 +20,7 @@ pipeline{
         }
          stage ('DB'){
             agent{
-                docker (image 'mysql:alpine')
+                docker {image 'mysql:alpine'}
             }
             steps{
                 sh 'SELECT * from Employees'
