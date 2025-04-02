@@ -1,0 +1,30 @@
+pipeline{
+    agent none
+    
+    stages{
+        stage ('Back-end'){
+            agent{
+                docker {image 'golang:alpine'}
+            }
+            steps{
+                sh 'go --version'
+            }
+        }
+        stage ('Front-end'){
+            agent{
+                docker (image 'python:alpine')
+            }
+            steps{
+                sh 'python --version'
+            }
+        }
+         stage ('DB'){
+            agent{
+                docker (image 'mysql:alpine')
+            }
+            steps{
+                sh 'SELECT * from Employees'
+            }
+        }
+    }
+}
