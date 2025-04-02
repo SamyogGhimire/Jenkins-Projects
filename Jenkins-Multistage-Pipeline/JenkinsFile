@@ -18,13 +18,5 @@ pipeline{
                 sh 'python --version'
             }
         }
-         stage ('DB'){
-            agent{
-                docker {image 'mysql:8'}
-            }
-            steps{
-                // sh 'SELECT * from Employees'
-            }
-        }
     }
 }
