@@ -23,7 +23,7 @@ pipeline{
                 docker {image 'mysql:8'}
             }
             steps{
-                sh 'SELECT * from Employees'
+                // sh 'SELECT * from Employees'
             }
         }
     }
