@@ -1,4 +1,4 @@
-#Jenkins Pipeline Successfully executed!!!
+#Jenkins Pipeline to verify the working of Docker Slave configuration is Successfully executed!!!
 
 Started by user Samyog Ghimire
 
